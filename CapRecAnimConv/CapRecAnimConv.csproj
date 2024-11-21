@@ -1,0 +1,733 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="captures\a10\[grunt_10]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_11]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_1]grunt_1_run.bin" />
+    <None Remove="captures\a10\[grunt_1]grunt_idle_1.bin" />
+    <None Remove="captures\a10\[grunt_1]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_2]grunt_2_run.bin" />
+    <None Remove="captures\a10\[grunt_2]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_3]grunt_3_run.bin" />
+    <None Remove="captures\a10\[grunt_3]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_4]grunt_4_run.bin" />
+    <None Remove="captures\a10\[grunt_4]pep_run.bin" />
+    <None Remove="captures\a10\[grunt_5]grunt_5_run.bin" />
+    <None Remove="captures\a10\[grunt_5]grunt_idle_1.bin" />
+    <None Remove="captures\a10\[grunt_6]grunt_6_run.bin" />
+    <None Remove="captures\a10\[grunt_7]grunt_7_run.bin" />
+    <None Remove="captures\a10\[grunt_7]grunt_idle_1.bin" />
+    <None Remove="captures\a10\[grunt_8]grunt_8_run.bin" />
+    <None Remove="captures\a10\[hangar_marine_1]hangar_marine_1_walk.bin" />
+    <None Remove="captures\a10\[hangar_marine_3]hangar_marine_3_walk.bin" />
+    <None Remove="captures\a10\[johnson]johnson_enter.bin" />
+    <None Remove="captures\a10\[johnson]johnson_pep_5e.bin" />
+    <None Remove="captures\a10\[johnson]johnson_pep_easy.bin" />
+    <None Remove="captures\a10\[johnson]johnson_saunter.bin" />
+    <None Remove="captures\a10\[keyes_x10]keyes_look_1.bin" />
+    <None Remove="captures\a10\[keyes_x10]keyes_walk_1.bin" />
+    <None Remove="captures\a10\[keyes_x10]keyes_walk_2.bin" />
+    <None Remove="captures\a10\[keyes_x10]keyes_x10_look_at_cortana.bin" />
+    <None Remove="captures\a10\[space_bomber_1]fly_straight.bin" />
+    <None Remove="captures\a10\[space_bomber_2]fly_straight.bin" />
+    <None Remove="captures\a10\[space_bomber_3]fly_straight.bin" />
+    <None Remove="captures\a10\[space_bomber_4]fly_straight.bin" />
+    <None Remove="captures\a10\[space_bomber_5]fly_straight.bin" />
+    <None Remove="captures\a10\[space_crew_3]space_walk_1.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_1]x10_crew_walk_1.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_1]x10_panic_run_5.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_1]x10_salute_1_finish.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_2]x10_crew_walk_2_finish.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_2]x10_crew_walk_2_start.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_2]x10_panic_run_6.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_2]x10_salute_2_start.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_3]x10_crew_walk_3.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_3]x10_panic_run_3.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_4]x10_crew_walk_4.bin" />
+    <None Remove="captures\a10\[x10_crew_panic_4]x10_panic_run_4.bin" />
+    <None Remove="captures\a10\[x10_pelican_1]x10_pelican_1_out.bin" />
+    <None Remove="captures\a10\[x10_pelican_2]x10_pelican_2_in.bin" />
+    <None Remove="captures\a10\[x10_pelican_3]x10_pelican_3_drop.bin" />
+    <None Remove="captures\a10\[x10_run_1a]x10_run_1a.bin" />
+    <None Remove="captures\a10\[x10_run_1b]x10_run_1b.bin" />
+    <None Remove="captures\a10\[x10_run_1c]x10_run_1a.bin" />
+    <None Remove="captures\a10\[x10_run_1d]x10_run_1b.bin" />
+    <None Remove="captures\a10\[x10_run_2a]x10_run_2b.bin" />
+    <None Remove="captures\a10\[x10_run_2b]x10_run_2a.bin" />
+    <None Remove="captures\a10\[x10_run_2c]x10_run_2b.bin" />
+    <None Remove="captures\a10\[x10_run_2d]x10_run_2a.bin" />
+    <None Remove="captures\a10\[x10_scorpion_1]scorpion_idle.bin" />
+    <None Remove="captures\a10\[x10_scorpion_2]scorpion_idle.bin" />
+    <None Remove="captures\a10\[x10_tank_3a]x10_tank_1_move.bin" />
+    <None Remove="captures\a10\[x10_warthog_1]x10_hog_1_run.bin" />
+    <None Remove="captures\a10\[x10_warthog_2]x10_hog_2_run.bin" />
+    <None Remove="captures\a10\[x10_warthog_2]x10_hog_4_run.bin" />
+    <None Remove="captures\a10\[x10_warthog_3]x10_hog_3_run.bin" />
+    <None Remove="captures\a10\[x10_warthog_3]x10_hog_5_run.bin" />
+    <None Remove="captures\a30\[lz_cship]lz_cship_enter.bin" />
+    <None Remove="captures\a30\[lz_cship]lz_cship_landing_drop.bin" />
+    <None Remove="captures\a30\[lz_cship]lz_cship_landing_exit.bin" />
+    <None Remove="captures\a50\[chief]chief_walk_1.bin" />
+    <None Remove="captures\a50\[chief_lift]chief_lift_watch.bin" />
+    <None Remove="captures\a50\[c_dropship_a]AREA4_C_DROPSHIP_IN.bin" />
+    <None Remove="captures\a50\[c_dropship_a]area4_c_dropship_out.bin" />
+    <None Remove="captures\a50\[c_dropship_a]c_dropship_area5_in.bin" />
+    <None Remove="captures\a50\[c_dropship_a]c_dropship_area5_out.bin" />
+    <None Remove="captures\a50\[final_hunter_1]hunter_1_run[isolated].bin" />
+    <None Remove="captures\a50\[final_hunter_1]hunter_1_run[runtime].bin" />
+    <None Remove="captures\a50\[final_hunter_2]hunter_2_run[isolated].bin" />
+    <None Remove="captures\a50\[final_hunter_2]hunter_2_run[runtime].bin" />
+    <None Remove="captures\a50\[hangar_dropship_b]hangar_dropship_b_exit.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area4_pelican_a_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area4_pelican_a_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area4_pelican_b_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area4_pelican_b_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]AREA5_PELICAN_A_IN.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area5_pelican_b_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]area5_pelican_b_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]hangar_pelican_b_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]hangar_pelican_b_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]insertion_pelican_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]insertion_pelican_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]v_rec_hangar_pelican_a_in.bin" />
+    <None Remove="captures\a50\[insertion_pelican]v_rec_hangar_pelican_a_out.bin" />
+    <None Remove="captures\a50\[insertion_pelican]v_rec_pel_2_out.bin" />
+    <None Remove="captures\a50\[keyes]keyes_look_at_chief.bin" />
+    <None Remove="captures\a50\[keyes]keyes_walk_1.bin" />
+    <None Remove="captures\a50\[marine_speech_1]marine1_look_keyes.bin" />
+    <None Remove="captures\a50\[marine_speech_1]marine1_run.bin" />
+    <None Remove="captures\a50\[marine_speech_2]marine2_look_keyes.bin" />
+    <None Remove="captures\a50\[marine_speech_2]marine2_run.bin" />
+    <None Remove="captures\a50\[marine_speech_3]marine3_look_keyes.bin" />
+    <None Remove="captures\a50\[marine_speech_3]marine3_run.bin" />
+    <None Remove="captures\b30\[chief]chief_ledge_walk.bin" />
+    <None Remove="captures\b30\[extraction_pelican]extraction_pelican_1.bin" />
+    <None Remove="captures\b30\[extraction_pelican]extraction_pelican_2.bin" />
+    <None Remove="captures\b30\[extraction_pelican_2]extraction_pelican_drop.bin" />
+    <None Remove="captures\b30\[hog_pelican]hog_pelican_in.bin" />
+    <None Remove="captures\b30\[hog_pelican]hog_pelican_out.bin" />
+    <None Remove="captures\b30\[insertion_pelican_1]insertion_pelican_1_in.bin" />
+    <None Remove="captures\b30\[insertion_pelican_1]insertion_pelican_1_out.bin" />
+    <None Remove="captures\b30\[insertion_pelican_2]insertion_pelican_2_in.bin" />
+    <None Remove="captures\b30\[insertion_pelican_2]insertion_pelican_2_out.bin" />
+    <None Remove="captures\b30\[lid_cship]lid_cship_exit.bin" />
+    <None Remove="captures\b30\[shafta_cship]shaftA_cship_exit_arch.bin" />
+    <None Remove="captures\b30\[shafta_cship]shaftA_cship_exit_pass.bin" />
+    <None Remove="captures\b30\[shafta_inv_cship]shaftA_inv_cship_exit.bin" />
+    <None Remove="captures\b40\[awake_1]grunt_walk_1.bin" />
+    <None Remove="captures\b40\[chief]chief_walk_1.bin" />
+    <None Remove="captures\b40\[chief]chief_walk_2.bin" />
+    <None Remove="captures\b40\[c_dropship_b]ext_b_b_dropship_a_in.bin" />
+    <None Remove="captures\b40\[c_dropship_b]ext_b_b_dropship_a_out.bin" />
+    <None Remove="captures\b40\[c_dropship_b]ext_b_dropship_a_in.bin" />
+    <None Remove="captures\b40\[c_dropship_b]EXT_B_DROPSHIP_A_OUT.bin" />
+    <None Remove="captures\b40\[insertion_pelican]insertion_pelican_in.bin" />
+    <None Remove="captures\b40\[insertion_pelican]insertion_pelican_out.bin" />
+    <None Remove="captures\b40\[pelican_a]ext_a_pelican_in.bin" />
+    <None Remove="captures\b40\[pelican_a]EXT_A_PELICAN_OUT.bin" />
+    <None Remove="captures\c10\[bisenti]bisenti_check.bin" />
+    <None Remove="captures\c10\[bisenti]bisenti_door_guard.bin" />
+    <None Remove="captures\c10\[bisenti]bisenti_lab_in.bin" />
+    <None Remove="captures\c10\[chief_crouch]chief_crouch_walk.bin" />
+    <None Remove="captures\c10\[insertion_pelican]insertion_pelican_in.bin" />
+    <None Remove="captures\c10\[insertion_pelican]insertion_pelican_out.bin" />
+    <None Remove="captures\c10\[jenkins]jenkins_check_3.bin" />
+    <None Remove="captures\c10\[jenkins]jenkins_ent_3.bin" />
+    <None Remove="captures\c10\[jenkins]jenkins_lab_3.bin" />
+    <None Remove="captures\c10\[jenkins]jenkins_pelican.bin" />
+    <None Remove="captures\c10\[johnson]johnson_check.bin" />
+    <None Remove="captures\c10\[johnson]johnson_door_run.bin" />
+    <None Remove="captures\c10\[johnson]johnson_lab_2.bin" />
+    <None Remove="captures\c10\[johnson]johnson_lab_in[isolated].bin" />
+    <None Remove="captures\c10\[johnson]johnson_lab_in[runtime].bin" />
+    <None Remove="captures\c10\[keyes]keyes_check_2.bin" />
+    <None Remove="captures\c10\[keyes_pistol]keyes_lab_2.bin" />
+    <None Remove="captures\c10\[marine_1]marine_1_check.bin" />
+    <None Remove="captures\c10\[marine_1]marine_1_lab_2.bin" />
+    <None Remove="captures\c10\[marine_1]marine_1_lab_in.bin" />
+    <None Remove="captures\c10\[marine_2]marine_2_check.bin" />
+    <None Remove="captures\c10\[marine_2]marine_2_door_advance.bin" />
+    <None Remove="captures\c10\[marine_2]marine_2_lab_in.bin" />
+    <None Remove="captures\c10\[marine_3]marine_3_check.bin" />
+    <None Remove="captures\c10\[marine_3]marine_3_lab_2.bin" />
+    <None Remove="captures\c10\[marine_3]marine_3_lab_in.bin" />
+    <None Remove="captures\c10\[mendoza]mendoza_check.bin" />
+    <None Remove="captures\c10\[mendoza]mendoza_door_advance.bin" />
+    <None Remove="captures\c10\[mendoza]mendoza_lab_2.bin" />
+    <None Remove="captures\c10\[mendoza]mendoza_lab_in[isolated].bin" />
+    <None Remove="captures\c10\[mendoza]mendoza_lab_in[runtime].bin" />
+    <None Remove="captures\c10\[x50_pelican_1]x50_pelican_1_in.bin" />
+    <None Remove="captures\c40\[chief]chief_monitor_follow.bin" />
+    <None Remove="captures\c40\[chief]chief_puzzled[isolated].bin" />
+    <None Remove="captures\c40\[chief]chief_puzzled[runtime].bin" />
+    <None Remove="captures\c40\[chief]chief_walk_2.bin" />
+    <None Remove="captures\c40\[chief]chief_walk_2[runtime-note].bin" />
+    <None Remove="captures\c40\[chief]core_look.bin" />
+    <None Remove="captures\c40\[chief]monitor_angry_look.bin" />
+    <None Remove="captures\c40\[chief]monitor_rise_look.bin" />
+    <None Remove="captures\d20\[chief_armed]chief_walk_1.bin" />
+    <None Remove="captures\d20\[enc5_7_dropship]enc5_7_dropship.bin" />
+    <None Remove="captures\d20\[ending_banshee1]ending_banshee1_v7.bin" />
+    <None Remove="captures\d20\[ending_banshee1]outro_banshee1.bin" />
+    <None Remove="captures\d20\[ending_banshee2]ending_banshee2_v7.bin" />
+    <None Remove="captures\d20\[ending_banshee2]outro_banshee2.bin" />
+    <None Remove="captures\d20\[outro_dropship]outro_dropship.bin" />
+    <None Remove="captures\d40\[chief_unarmed]chief_hangar_run.bin" />
+    <None Remove="captures\d40\[chief_unarmed]chief_hangar_run[runtime].bin" />
+    <None Remove="captures\d40\[enc6_5_dropship]enc6_5_dropship.bin" />
+    <None Remove="captures\d40\[intro_banshee]banshee_approach.bin" />
+    <None Remove="captures\d40\[intro_banshee]intro_banshee_flight.bin" />
+    <None Remove="captures\d40\[v_trench_banshee_1]v_rec_trench_banshee_1_in.bin" />
+    <None Remove="captures\d40\[v_trench_banshee_2]v_rec_trench_banshee_2_in.bin" />
+    <None Remove="captures\d40\[v_trench_pelican]v_rec_trench_pelican_crash.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="captures\a10\[grunt_10]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_11]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_1]grunt_1_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_1]grunt_idle_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_1]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_2]grunt_2_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_2]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_3]grunt_3_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_3]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_4]grunt_4_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_4]pep_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_5]grunt_5_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_5]grunt_idle_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_6]grunt_6_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_7]grunt_7_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_7]grunt_idle_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[grunt_8]grunt_8_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[hangar_marine_1]hangar_marine_1_walk.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[hangar_marine_3]hangar_marine_3_walk.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[johnson]johnson_enter.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[johnson]johnson_pep_5e.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[johnson]johnson_pep_easy.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[johnson]johnson_saunter.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[keyes_x10]keyes_look_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[keyes_x10]keyes_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[keyes_x10]keyes_walk_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[keyes_x10]keyes_x10_look_at_cortana.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_bomber_1]fly_straight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_bomber_2]fly_straight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_bomber_3]fly_straight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_bomber_4]fly_straight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_bomber_5]fly_straight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[space_crew_3]space_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_1]x10_crew_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_1]x10_panic_run_5.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_1]x10_salute_1_finish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_2]x10_crew_walk_2_finish.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_2]x10_crew_walk_2_start.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_2]x10_panic_run_6.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_2]x10_salute_2_start.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_3]x10_crew_walk_3.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_3]x10_panic_run_3.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_4]x10_crew_walk_4.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_crew_panic_4]x10_panic_run_4.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_pelican_1]x10_pelican_1_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_pelican_2]x10_pelican_2_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_pelican_3]x10_pelican_3_drop.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_1a]x10_run_1a.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_1b]x10_run_1b.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_1c]x10_run_1a.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_1d]x10_run_1b.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_2a]x10_run_2b.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_2b]x10_run_2a.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_2c]x10_run_2b.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_run_2d]x10_run_2a.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_scorpion_1]scorpion_idle.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_scorpion_2]scorpion_idle.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_tank_3a]x10_tank_1_move.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_warthog_1]x10_hog_1_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_warthog_2]x10_hog_2_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_warthog_2]x10_hog_4_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_warthog_3]x10_hog_3_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a10\[x10_warthog_3]x10_hog_5_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a30\[lz_cship]lz_cship_enter.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a30\[lz_cship]lz_cship_landing_drop.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a30\[lz_cship]lz_cship_landing_exit.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[chief]chief_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[chief_lift]chief_lift_watch.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[c_dropship_a]AREA4_C_DROPSHIP_IN.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[c_dropship_a]area4_c_dropship_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[c_dropship_a]c_dropship_area5_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[c_dropship_a]c_dropship_area5_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[final_hunter_1]hunter_1_run[isolated].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[final_hunter_1]hunter_1_run[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[final_hunter_2]hunter_2_run[isolated].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[final_hunter_2]hunter_2_run[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[hangar_dropship_b]hangar_dropship_b_exit.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area4_pelican_a_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area4_pelican_a_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area4_pelican_b_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area4_pelican_b_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]AREA5_PELICAN_A_IN.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area5_pelican_b_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]area5_pelican_b_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]hangar_pelican_b_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]hangar_pelican_b_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]insertion_pelican_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]insertion_pelican_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]v_rec_hangar_pelican_a_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]v_rec_hangar_pelican_a_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[insertion_pelican]v_rec_pel_2_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[keyes]keyes_look_at_chief.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[keyes]keyes_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_1]marine1_look_keyes.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_1]marine1_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_2]marine2_look_keyes.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_2]marine2_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_3]marine3_look_keyes.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\a50\[marine_speech_3]marine3_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[chief]chief_ledge_walk.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[extraction_pelican]extraction_pelican_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[extraction_pelican]extraction_pelican_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[extraction_pelican_2]extraction_pelican_drop.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[hog_pelican]hog_pelican_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[hog_pelican]hog_pelican_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[insertion_pelican_1]insertion_pelican_1_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[insertion_pelican_1]insertion_pelican_1_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[insertion_pelican_2]insertion_pelican_2_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[insertion_pelican_2]insertion_pelican_2_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[lid_cship]lid_cship_exit.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[shafta_cship]shaftA_cship_exit_arch.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[shafta_cship]shaftA_cship_exit_pass.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b30\[shafta_inv_cship]shaftA_inv_cship_exit.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[awake_1]grunt_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[chief]chief_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[chief]chief_walk_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[c_dropship_b]ext_b_b_dropship_a_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[c_dropship_b]ext_b_b_dropship_a_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[c_dropship_b]ext_b_dropship_a_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[c_dropship_b]EXT_B_DROPSHIP_A_OUT.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[insertion_pelican]insertion_pelican_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[insertion_pelican]insertion_pelican_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[pelican_a]ext_a_pelican_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\b40\[pelican_a]EXT_A_PELICAN_OUT.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[bisenti]bisenti_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[bisenti]bisenti_door_guard.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[bisenti]bisenti_lab_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[chief_crouch]chief_crouch_walk.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[insertion_pelican]insertion_pelican_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[insertion_pelican]insertion_pelican_out.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[jenkins]jenkins_check_3.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[jenkins]jenkins_ent_3.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[jenkins]jenkins_lab_3.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[jenkins]jenkins_pelican.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[johnson]johnson_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[johnson]johnson_door_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[johnson]johnson_lab_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[johnson]johnson_lab_in[isolated].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[johnson]johnson_lab_in[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[keyes]keyes_check_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[keyes_pistol]keyes_lab_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_1]marine_1_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_1]marine_1_lab_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_1]marine_1_lab_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_2]marine_2_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_2]marine_2_door_advance.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_2]marine_2_lab_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_3]marine_3_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_3]marine_3_lab_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[marine_3]marine_3_lab_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[mendoza]mendoza_check.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[mendoza]mendoza_door_advance.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[mendoza]mendoza_lab_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[mendoza]mendoza_lab_in[isolated].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[mendoza]mendoza_lab_in[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c10\[x50_pelican_1]x50_pelican_1_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]chief_monitor_follow.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]chief_puzzled[isolated].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]chief_puzzled[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]chief_walk_2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]chief_walk_2[runtime-note].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]core_look.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]monitor_angry_look.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\c40\[chief]monitor_rise_look.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[chief_armed]chief_walk_1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[enc5_7_dropship]enc5_7_dropship.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[ending_banshee1]ending_banshee1_v7.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[ending_banshee1]outro_banshee1.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[ending_banshee2]ending_banshee2_v7.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[ending_banshee2]outro_banshee2.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d20\[outro_dropship]outro_dropship.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[chief_unarmed]chief_hangar_run.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[chief_unarmed]chief_hangar_run[runtime].bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[enc6_5_dropship]enc6_5_dropship.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[intro_banshee]banshee_approach.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[intro_banshee]intro_banshee_flight.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[v_trench_banshee_1]v_rec_trench_banshee_1_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[v_trench_banshee_2]v_rec_trench_banshee_2_in.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="captures\d40\[v_trench_pelican]v_rec_trench_pelican_crash.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
