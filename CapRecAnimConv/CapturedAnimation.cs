@@ -168,9 +168,9 @@ namespace CapRecAnimConv
 					{
 						Vector3 scaledTr = node.Translation * 100f;
 
-						sw.WriteLine($"{scaledTr.X:0.0000000000}\t{scaledTr.Y:0.0000000000}\t{scaledTr.Z:0.0000000000}");
-						sw.WriteLine($"{node.Rotation.X:0.0000000000}\t{node.Rotation.Y:0.0000000000}\t{node.Rotation.Z:0.0000000000}\t{node.Rotation.W:0.0000000000}");
-						sw.WriteLine($"{node.Scale:0.0000000000}");
+						sw.WriteLine(FormattableString.Invariant($"{scaledTr.X:0.0000000000}\t{scaledTr.Y:0.0000000000}\t{scaledTr.Z:0.0000000000}"));
+						sw.WriteLine(FormattableString.Invariant($"{node.Rotation.X:0.0000000000}\t{node.Rotation.Y:0.0000000000}\t{node.Rotation.Z:0.0000000000}\t{node.Rotation.W:0.0000000000}"));
+						sw.WriteLine(FormattableString.Invariant($"{node.Scale:0.0000000000}"));
 					}
 				}
 
@@ -188,12 +188,12 @@ namespace CapRecAnimConv
 
 				foreach (TickInfo tick in Ticks)
 				{
-					sw.WriteLine($"{tick.ObjectPosition.X:0.0000000000}\t{tick.ObjectPosition.Y:0.0000000000}\t{tick.ObjectPosition.Z:0.0000000000}");
+					sw.WriteLine(FormattableString.Invariant($"{tick.ObjectPosition.X:0.0000000000}\t{tick.ObjectPosition.Y:0.0000000000}\t{tick.ObjectPosition.Z:0.0000000000}"));
 
 					if (rotation)
 					{
 						var normRot = Quaternion.Normalize(tick.ObjectRotation);
-						sw.WriteLine($"{normRot.X:0.0000000000}\t{normRot.Y:0.0000000000}\t{normRot.Z:0.0000000000}\t{normRot.W:0.0000000000}");
+						sw.WriteLine(FormattableString.Invariant($"{normRot.X:0.0000000000}\t{normRot.Y:0.0000000000}\t{normRot.Z:0.0000000000}\t{normRot.W:0.0000000000}"));
 					}
 
 					File.WriteAllText(path, sw.ToString());
