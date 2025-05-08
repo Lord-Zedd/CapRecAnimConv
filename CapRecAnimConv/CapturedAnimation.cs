@@ -123,15 +123,19 @@ namespace CapRecAnimConv
 					Vector3 workingTranslation = new Vector3(node.Translation.X, node.Translation.Y, node.Translation.Z);
 					Quaternion workingRotation = Quaternion.Normalize(new Quaternion(node.Rotation.X, node.Rotation.Y, node.Rotation.Z, node.Rotation.W));
 
-					if (posMod == PositionModType.ObjectXYZ)
-						workingTranslation += tick.ObjectPosition;
-					else if (posMod == PositionModType.ObjectXY)
-						workingTranslation += new Vector3(tick.ObjectPosition.X, tick.ObjectPosition.Y, 0);
-					else if (posMod == PositionModType.Custom)
-						workingTranslation += customPos;
+					if (i == 0)
+					{
+						if (posMod == PositionModType.ObjectXYZ)
+							workingTranslation += tick.ObjectPosition;
+						else if (posMod == PositionModType.ObjectXY)
+							workingTranslation += new Vector3(tick.ObjectPosition.X, tick.ObjectPosition.Y, 0);
+						else if (posMod == PositionModType.Custom)
+							workingTranslation += customPos;
 
-					if (i == 0 && rotMod == RotationModType.Object)
-						workingRotation *= Quaternion.Normalize(tick.ObjectRotation);
+						if (rotMod == RotationModType.Object)
+							workingRotation *= Quaternion.Normalize(tick.ObjectRotation);
+					}
+					
 
 					proc.Nodes.Add(new TickNodeInfo(workingRotation, workingTranslation, node.Scale));
 				}
